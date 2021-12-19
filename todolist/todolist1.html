@@ -1,21 +1,41 @@
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="style1.css" />
-</head>
+  <meta http-equiv="Content-Type"Content="text/html;charset=utf8"/>
+    <link rel="stylesheet" type="text/css" href="style1.css" />
+ 
+<style>
+    p {
+        display:none;
+        background-color:grey;
+        padding:5px;
+    }
+    button:hover p  {
+        display :block;
+}
+    /*#his-btn:hover  {
+        background-color:grey;
+        padding:3px;
+        display:block;
+        background-image: url("todolist3/图片.jpg");
+    }*/
+</style> 
+</head>   
 <body>
   <div id="todolist" class="todolist-panel">
     <div class="input-pane">
-      <input type="text" >
-      <button id="add-btn">+</button>
-      <button id="his-btn">H</button>
+      <div><input type="text" >
+      <button id="add-btn">+<p>点击这里添加事项</p></button></div>
+       
+      <button id="his-btn">H<p>点击这里查看历史完成事项</p></button> 
+       
+      
+       
     </div>
-
+     
     <div class="list-pane">
-        <button id="delete-btn">X</button>
-
     </div>
   </div>
+   
 
   <script src="script1.js"></script>
 </body>
-</html>

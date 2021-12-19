@@ -5,11 +5,15 @@ body {
 }
 
 .todolist-panel {
-    width: 20em;
+    width: 30em;
     min-height: 25em;
 
     border: 1px solid #bbb;
     box-shadow: 2px 2px 2px #bbb;
+    word-wrap:break-word; 
+    word-break:break-all; 
+
+    overflow: scroll;  
 
 }
 
@@ -49,10 +53,10 @@ body {
     color: red
 }
 
-.input-pane  #his-btn {
 
-}
 
 .input-pane  #his-btn.open {
     background-color: blue;
 }
+
+ 
